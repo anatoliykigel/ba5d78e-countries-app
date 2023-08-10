@@ -30,6 +30,13 @@ const currencyCode = Object.keys((country ?? {}).currencies ?? {})?.join(', ');
 
 const neighbours = store.getNeighboringСountries(country.borders);
 
+useHead({
+  title: `${country.name.common} | Countries App`,
+  meta: [
+    { name: 'description', content: `Detailed information about ${country.name.official}` }
+  ]
+});
+
 </script>
 
 <template>

@@ -4,6 +4,13 @@ import { useCountriesStore } from '../stores/countries';
 
 const store = useCountriesStore();
 
+useHead({
+  title: 'Countries App',
+  meta: [
+    { name: 'description', content: 'Detailed information about all countries of the world' }
+  ]
+});
+
 </script>
 
 <template>
